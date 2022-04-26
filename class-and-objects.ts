@@ -7,6 +7,7 @@ class Tshirt {
     type: string;
     color: string;
 
+    // Display the properties of T-Shirt
     display() {
         let tShirtData = `Name: ${this.name} \n Brand: ${this.brand} \n Size: ${this.size} \n Gender: ${this.gender} \n Price: ${this.price} \n Type: ${this.type} \n Color: ${this.color}`;
 
