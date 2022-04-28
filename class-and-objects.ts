@@ -11,28 +11,15 @@ class Tshirt {
     size: string;
     gender: string;
     price: string;
-    type: TshirtType;
-    color: string;
-
-    // Initialize default values
-    constructor(name: string, brand: string, size: string, gender: string, price: string, type: TshirtType, color: string) {
-        this.name = name;
-        this.brand = brand;
-        this.size = size;
-        this.gender = gender;
-        this.price = price;
-        this.type = type;
-        this.color = color;
-    }
-
-    // Display the properties of T-Shirt
-    display() {
-        let tShirtData = `Name: ${this.name} \n Brand: ${this.brand} \n Size: ${this.size} \n Gender: ${this.gender} \n Price: ${this.price} \n Type: ${this.type} \n Color: ${this.color}`;
-
-        console.log(tShirtData);
-    }
+    private type: TshirtType;
+    private color: string;
 }
 
-let tShirtObj = new Tshirt('Printed Designer Black', 'Craft Tees', 'XL', 'M', 'Rs. 500.00', TshirtType.Crushed, 'Black');
+let tShirtObj: Tshirt = new Tshirt();
+tShirtObj.name = 'Printed Designer black';
+tShirtObj.brand = 'Craft Tees';
+tShirtObj.size = 'XL';
+tShirtObj.gender = 'F';
+tShirtObj.price = 'Rs. 500.00';
 
-tShirtObj.display();
+// tShirtObj.type = TshirtType.Checked;
